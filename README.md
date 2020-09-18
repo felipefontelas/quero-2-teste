@@ -1,3 +1,5 @@
+Eu optei por fazer um layout novo e simples, utilizando o preto e branco como identidade visual, para representar os dias de outrora do cinema, o que também casa com a necessidade hoje em dia de haver um Dark Mode nas páginas, para facilitar a visualização. Os cards foram um pouco inspirados nos cards da Moviecom.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
