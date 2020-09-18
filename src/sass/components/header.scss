@@ -1,0 +1,116 @@
+.App-header {
+  background-color: #282c34;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  &__burger {
+    position: absolute;
+    left: 20px;
+    display: none;
+    @media (max-width: 991px) {
+      display: inline-block;
+    }
+    img {
+      width: 20px;
+    }
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    font-family: $font-default;
+    font-size: 35px;
+    text-decoration: none;
+    color: white;
+    &--logo {
+      width: 35px;
+      margin: 5px 10px 10px 10px;
+      @media (max-width: 768px) {
+        width: 25px;
+      }
+    }
+    @media (max-width: 768px) {
+      font-size: 25px;
+    }
+  }
+  &__menu {
+    font-size: 15px;
+    display: flex;
+    a {
+      margin: 0px 15px;
+      padding: 15px;
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    a:hover {
+      background-color: white;
+      color: black;
+    }
+    button {
+      border: none;
+      background: transparent;
+    }
+    button:active {
+      border: none;
+    }
+    &--search {
+      width: 20px;
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+  &__search {
+    display: flex;
+    position: absolute;
+    margin-top: 120px;
+    right: 120px;
+    background: black;
+    height: 0px;
+    width: 360px;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.3s;
+    overflow: hidden;
+    z-index: 9;
+    input {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+  }
+  &__contact {
+    font-size: 12px;
+    position: absolute;
+    margin-top: 204px;
+    background: black;
+    border-radius: 5px;
+    right: 200px;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  &__about {
+    background: black;
+    font-size: 13px;
+    width: 220px;
+    position: absolute;
+    right: 55px;
+    top: 69px;
+    border-radius: 5px;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+}
+
+.searchbutton {
+  border: 0.5px solid white;
+  border-radius: 5px;
+  background: black;
+  color: white;
+  margin-right: 15px;
+  height: 35px;
+}
